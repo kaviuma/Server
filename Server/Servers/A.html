@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us</title>
+  <link rel="stylesheet" href="about.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.7;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 15px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #f39c12;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)),
+              url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  margin-bottom: 40px;
+}
+
+.hero h2 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* About Section */
+.about-section {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  margin-bottom: 40px;
+}
+
+.about-section h2 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* Team Section */
+.team {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.team h2 {
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.team-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  background-color: #fff;
+  padding: 20px;
+  width: 220px;
+  border-radius: 15px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+}
+
+.team-member img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.team-member h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.team-member p {
+  color: #777;
+  font-size: 0.95rem;
+}
+
+/* Footer */
+footer {
+  background-color: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>About Us</h1>
+      <nav>
+        <ul>
+          <li><a href="http://localhost:5000">Home</a></li>
+          <li><a href="http://localhost:5000/A">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>We Design for the Future</h2>
+      <p>Innovative, creative, and passionate about building digital experiences that make a difference.</p>
+    </div>
+  </section>
+
+  <section class="about-section container">
+    <h2>Who We Are</h2>
+    <p>We are a creative team of designers, developers, and strategists dedicated to building outstanding websites. Our goal is to craft experiences that engage users and deliver results for businesses.</p>
+
+    <h2>Our Mission</h2>
+    <p>To deliver elegant, scalable, and fast digital solutions for clients across the globe.</p>
+  </section>
+
+  <section class="team container">
+    <h2>Meet the Team</h2>
+    <div class="team-grid">
+      <div class="team-member">
+        <img src="https://via.placeholder.com/150" alt="Team Member">
+        <h3>Alex Johnson</h3>
+        <p>Frontend Developer</p>
+      </div>
+      <div class="team-member">
+        <img src="https://via.placeholder.com/150" alt="Team Member">
+        <h3>Priya Sharma</h3>
+        <p>UI/UX Designer</p>
+      </div>
+      <div class="team-member">
+        <img src="https://via.placeholder.com/150" alt="Team Member">
+        <h3>Michael Lee</h3>
+        <p>Backend Engineer</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Stylish Website. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
